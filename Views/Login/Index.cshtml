@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Region";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model UserModel
+<div id="loginbox">
+    <form asp-action="UserLogin" asp-controller="Login" id="loginform" autocomplete="off" method="post" class="login-form">
+        <div class="control-group normal_text">
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on"><i class="icon-user"></i></span>
+                    <input asp-for="email" type="email"   id="email" required autocomplete="new-email" />
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on"><i class="icon-lock"></i></span>
+                    <input asp-for="password" type="password" id="password"  autocomplete="new-password" required />
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <span class="pull-left"><a href="#" class="flip-link btn btn-inverse" id="to-recover">Forgot password?</a></span>
+            <span class="pull-right"><input type="submit" class="btn btn-success" /></span>
+        </div>
+    </form>
+</div>
+
